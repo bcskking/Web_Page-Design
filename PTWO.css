@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(source1.jpg) ;
+    background-size: cover;
+    height: 100hv; 
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 20px 30px;
+    font-family: monospace;
+}
+
+.navbar ul li a:hover{
+    background: #ecf1f1;
+    color: #050801;
+    box-shadow: 0 0 5px #ecf1f1,
+                0 0 25px #ecf1f1,
+                0 0 50px #ecf1f1,
+                0 0 200px #ecf1f1;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    transition: .5s;
+}
+
+.btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: transLate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none; 
+    width: 900px;
+}
+
+.bcsk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: transLate(-50%, -50%);
+    font-family: sans-serif;    
+}
+
+.bcsk h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 900px
+}
+
+.bcsk h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 900px
+}
+
+.bcsk h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 900px
+}
+
+.wavy h3 {
+    color: rgb(235, 133, 133);
+    width: 900px;
+    height: 10px;
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: transLate(-50%, -50%);
+    font-family: sans-serif;  
+}
+
+.wavy h3 span {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i))
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%,100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
